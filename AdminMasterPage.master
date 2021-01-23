@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head id="Head1" runat="server">
+<meta http-equiv=Content-Type content="text/html;  charset=ISO-8859-1">
+<title>Online Booking For Cine Malls</title>
+<asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<style>
+	
+A 		{ color: #C0C0C0; font-weight:bold; text-decoration: none; }		
+A:link		{ color: #C0C0C0; font-weight:bold; text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+A:visited		{ color: #C0C0C0; font-weight:bold; text-decoration: none; }	
+A:active		{ color: #358391; font-weight:bold; text-decoration: none;  }	
+A:hover		{ color: #358391; font-weight:bold; text-decoration: none;  }
+
+body, td, tr{		
+font-family: verdana;		
+color:#FFFFFF;		
+font-size:11;		
+font-weight:normal;
+}
+
+
+    .style1
+    {
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+
+    .style3
+    {
+        text-align: center;
+    }
+    .style4
+    {
+        font-size: large;
+    }
+
+
+</style>
+
+</head>
+<body background="../img/bg.gif" bgcolor="#202020" topmargin="0" leftmargin="0">
+
+    <form id="form1" runat="server">
+
+<center>
+<table bgcolor="#202020" width="776" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="3" bgcolor="#FFFFFF"></td>
+<td width="770" valign="top">
+ 
+    <table bgcolor="#202020" width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+    <td height="132" align="left" valign="middle" background="../img/headerback.jpg">
+        <font size=5 style="font-family: 'Times New Roman', Times, serif">&nbsp;ONLINE 
+        MOVIE TICKET BOOKING SYSTEM</font><font size=5><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><br>&nbsp;
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;<span class="style1">EXPLORE THE WORLD OF MOVIES</span>........!</td> 
+    </tr>
+    <tr>
+    <td height="10"></td> 
+    </tr>
+   <tr>
+    <td height="32" align="center" valign="middle" background="../img/bluebg.gif"> 
+        &nbsp;</td> 
+    </tr>
+    </table>
+ 
+    <table bgcolor="#464646" width="770" height="350" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td width="222" bgcolor="#202020" align="left" valign="top">
+    
+        <table width="222" border="0" cellspacing="0" cellpadding="0" bgcolor="#202020">
+        <tr>
+        <td height="24" width="222" valign="middle">&nbsp; </td>
+        </tr>
+        <tr>
+        <td width="222" height=3 bgcolor="#ffffff"></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign="middle"><a href="AdminBookingInformation.aspx">BOOKING INFORMATION</a></td>
+        </tr>
+        <tr>
+        <td width="222" height=3 bgcolor="#ffffff"></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign="middle"><a href="AdminMovieUpdation.aspx">MOVIE UPDATION</a></td>
+        </tr>
+        <tr>
+        <td width="222" height=3 bgcolor="#ffffff"></td>
+        </tr>
+        <tr>
+        <td height="24" width="222" valign="middle"><a href="AdminNewRegistration.aspx">ADMIN NEW REGISTRATION
+                        </a></td>
+        </tr>
+        <tr>
+        <td width="222" height=3 bgcolor="#ffffff"></td>
+      
+        </tr>
+        <tr>
+        <td height="24" width="222" valign="middle">&nbsp; <a href="frmAddManager.aspx">
+            </a></td>
+        </tr>
+        <tr>
+        <td width="222" height=3 bgcolor="#ffffff"></td>
+        </tr>
+             </table>
+
+    </td>
+    <td width="3" bgcolor="#FFFFFF" align="right" valign="top"></td>
+    <td width="10" align="left" valign="top">&nbsp;</td> 
+    <td width="525" align="left" valign="top"><asp:ContentPlaceHolder 
+            ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <br>
+    </td>  
+    <td width="10" align="left" valign="top">&nbsp;</td> 
+    </tr>
+    </table> 
+ 
+    <table bgcolor="#464646" width="770" height="32" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td width="222" bgcolor="#202020" align="left" valign="top"></td>
+    <td width="3" bgcolor="#FFFFFF" align="right" valign="top"></td>
+    <td width="10" align="left" valign="top">&nbsp;</td> 
+    <td width="525" align="left" valign="top">&nbsp;</td>  
+    <td width="10" align="left" valign="top">&nbsp;</td> 
+    </tr>
+    </table>
+ 
+    <table bgcolor="#202020" border="0" cellspacing="0" cellpadding="0" style="width: 770px">
+    <tr>
+    <td height="32" width="30" align="left" valign="middle" style="background-image:url(../img/bluebg.gif)">
+        &nbsp;</td>
+    <td height="32" width="740" valign="middle" 
+            style="background-image:url(../img/bluebg.gif)" class="style3">
+        <span class="style1">© ONLINE MOVIE TICKET BOOKING SYSTEM</span><span 
+            class="style4"> &nbsp; </span> </td> </tr>
+    </table>  
+
+</td>
+<td width="3" bgcolor="#FFFFFF"></td>
+</tr>
+</table>
+</center>
+
+
+<div style="font-size: 0.8em; text-align: center; margin-top: 1.0em; margin-bottom: 1.0em;">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+&nbsp;</div>
+    </form>
+</body>
+</html>
